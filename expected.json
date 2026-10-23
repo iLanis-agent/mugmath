@@ -1,0 +1,971 @@
+{
+ "cases": [
+  {
+   "fn": "boxes",
+   "args": [
+    "350",
+    "24"
+   ],
+   "expect": "The 350 mugs at 24 mugs a box take 15 boxes, the last box holding 14 mugs."
+  },
+  {
+   "fn": "weeks",
+   "args": [
+    "350",
+    "40"
+   ],
+   "expect": "The 350 mugs at 40 mugs a week last 8 full weeks with 30 mugs left for the next week."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "15",
+    "38.50",
+    "350"
+   ],
+   "expect": "The 15 boxes at $38.50 a box come to $577.50, $1.65 a mug."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "350",
+    "6"
+   ],
+   "expect": "The 350 mugs at 6 mugs a minute take 59 minutes, 0 hours 59 minutes."
+  },
+  {
+   "fn": "boxes",
+   "args": [
+    "1",
+    "1"
+   ],
+   "expect": "The 1 mug at 1 mug a box takes 1 box, the last box holding 1 mug."
+  },
+  {
+   "fn": "boxes",
+   "args": [
+    "336",
+    "24"
+   ],
+   "expect": "The 336 mugs at 24 mugs a box take 14 boxes, the last box holding 24 mugs."
+  },
+  {
+   "fn": "boxes",
+   "args": [
+    "1000000",
+    "1000"
+   ],
+   "expect": "The 1000000 mugs at 1000 mugs a box take 1000 boxes, the last box holding 1000 mugs."
+  },
+  {
+   "fn": "weeks",
+   "args": [
+    "1",
+    "1"
+   ],
+   "expect": "The 1 mug at 1 mug a week lasts 1 full week with 0 mugs left for the next week."
+  },
+  {
+   "fn": "weeks",
+   "args": [
+    "320",
+    "40"
+   ],
+   "expect": "The 320 mugs at 40 mugs a week last 8 full weeks with 0 mugs left for the next week."
+  },
+  {
+   "fn": "weeks",
+   "args": [
+    "1000000",
+    "100000"
+   ],
+   "expect": "The 1000000 mugs at 100000 mugs a week last 10 full weeks with 0 mugs left for the next week."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "1",
+    "0.01",
+    "1"
+   ],
+   "expect": "The 1 box at $0.01 a box comes to $0.01, $0.01 a mug."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "100000",
+    "999.99",
+    "1000000"
+   ],
+   "expect": "The 100000 boxes at $999.99 a box come to $99999000.00, $100.00 a mug."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "1",
+    "1"
+   ],
+   "expect": "The 1 mug at 1 mug a minute takes 1 minute, 0 hours 1 minute."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "60",
+    "1"
+   ],
+   "expect": "The 60 mugs at 1 mug a minute take 60 minutes, 1 hour 0 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "1000000",
+    "100"
+   ],
+   "expect": "The 1000000 mugs at 100 mugs a minute take 10000 minutes, 166 hours 40 minutes."
+  },
+  {
+   "fn": "boxes",
+   "args": [
+    "44614",
+    "360"
+   ],
+   "expect": "The 44614 mugs at 360 mugs a box take 124 boxes, the last box holding 334 mugs."
+  },
+  {
+   "fn": "boxes",
+   "args": [
+    "134708",
+    "780"
+   ],
+   "expect": "The 134708 mugs at 780 mugs a box take 173 boxes, the last box holding 548 mugs."
+  },
+  {
+   "fn": "boxes",
+   "args": [
+    "964921",
+    "375"
+   ],
+   "expect": "The 964921 mugs at 375 mugs a box take 2574 boxes, the last box holding 46 mugs."
+  },
+  {
+   "fn": "boxes",
+   "args": [
+    "870266",
+    "680"
+   ],
+   "expect": "The 870266 mugs at 680 mugs a box take 1280 boxes, the last box holding 546 mugs."
+  },
+  {
+   "fn": "boxes",
+   "args": [
+    "940802",
+    "221"
+   ],
+   "expect": "The 940802 mugs at 221 mugs a box take 4258 boxes, the last box holding 5 mugs."
+  },
+  {
+   "fn": "boxes",
+   "args": [
+    "873665",
+    "918"
+   ],
+   "expect": "The 873665 mugs at 918 mugs a box take 952 boxes, the last box holding 647 mugs."
+  },
+  {
+   "fn": "boxes",
+   "args": [
+    "430291",
+    "641"
+   ],
+   "expect": "The 430291 mugs at 641 mugs a box take 672 boxes, the last box holding 180 mugs."
+  },
+  {
+   "fn": "boxes",
+   "args": [
+    "317201",
+    "490"
+   ],
+   "expect": "The 317201 mugs at 490 mugs a box take 648 boxes, the last box holding 171 mugs."
+  },
+  {
+   "fn": "boxes",
+   "args": [
+    "651654",
+    "5"
+   ],
+   "expect": "The 651654 mugs at 5 mugs a box take 130331 boxes, the last box holding 4 mugs."
+  },
+  {
+   "fn": "boxes",
+   "args": [
+    "179341",
+    "352"
+   ],
+   "expect": "The 179341 mugs at 352 mugs a box take 510 boxes, the last box holding 173 mugs."
+  },
+  {
+   "fn": "boxes",
+   "args": [
+    "686281",
+    "556"
+   ],
+   "expect": "The 686281 mugs at 556 mugs a box take 1235 boxes, the last box holding 177 mugs."
+  },
+  {
+   "fn": "boxes",
+   "args": [
+    "652802",
+    "124"
+   ],
+   "expect": "The 652802 mugs at 124 mugs a box take 5265 boxes, the last box holding 66 mugs."
+  },
+  {
+   "fn": "boxes",
+   "args": [
+    "843948",
+    "92"
+   ],
+   "expect": "The 843948 mugs at 92 mugs a box take 9174 boxes, the last box holding 32 mugs."
+  },
+  {
+   "fn": "boxes",
+   "args": [
+    "693985",
+    "967"
+   ],
+   "expect": "The 693985 mugs at 967 mugs a box take 718 boxes, the last box holding 646 mugs."
+  },
+  {
+   "fn": "boxes",
+   "args": [
+    "238608",
+    "607"
+   ],
+   "expect": "The 238608 mugs at 607 mugs a box take 394 boxes, the last box holding 57 mugs."
+  },
+  {
+   "fn": "boxes",
+   "args": [
+    "413878",
+    "47"
+   ],
+   "expect": "The 413878 mugs at 47 mugs a box take 8806 boxes, the last box holding 43 mugs."
+  },
+  {
+   "fn": "boxes",
+   "args": [
+    "881449",
+    "959"
+   ],
+   "expect": "The 881449 mugs at 959 mugs a box take 920 boxes, the last box holding 128 mugs."
+  },
+  {
+   "fn": "boxes",
+   "args": [
+    "980218",
+    "576"
+   ],
+   "expect": "The 980218 mugs at 576 mugs a box take 1702 boxes, the last box holding 442 mugs."
+  },
+  {
+   "fn": "boxes",
+   "args": [
+    "236453",
+    "851"
+   ],
+   "expect": "The 236453 mugs at 851 mugs a box take 278 boxes, the last box holding 726 mugs."
+  },
+  {
+   "fn": "boxes",
+   "args": [
+    "873639",
+    "453"
+   ],
+   "expect": "The 873639 mugs at 453 mugs a box take 1929 boxes, the last box holding 255 mugs."
+  },
+  {
+   "fn": "weeks",
+   "args": [
+    "206887",
+    "50200"
+   ],
+   "expect": "The 206887 mugs at 50200 mugs a week last 4 full weeks with 6087 mugs left for the next week."
+  },
+  {
+   "fn": "weeks",
+   "args": [
+    "562470",
+    "3858"
+   ],
+   "expect": "The 562470 mugs at 3858 mugs a week last 145 full weeks with 3060 mugs left for the next week."
+  },
+  {
+   "fn": "weeks",
+   "args": [
+    "160773",
+    "12356"
+   ],
+   "expect": "The 160773 mugs at 12356 mugs a week last 13 full weeks with 145 mugs left for the next week."
+  },
+  {
+   "fn": "weeks",
+   "args": [
+    "830528",
+    "40891"
+   ],
+   "expect": "The 830528 mugs at 40891 mugs a week last 20 full weeks with 12708 mugs left for the next week."
+  },
+  {
+   "fn": "weeks",
+   "args": [
+    "648291",
+    "44227"
+   ],
+   "expect": "The 648291 mugs at 44227 mugs a week last 14 full weeks with 29113 mugs left for the next week."
+  },
+  {
+   "fn": "weeks",
+   "args": [
+    "546110",
+    "29235"
+   ],
+   "expect": "The 546110 mugs at 29235 mugs a week last 18 full weeks with 19880 mugs left for the next week."
+  },
+  {
+   "fn": "weeks",
+   "args": [
+    "194986",
+    "44047"
+   ],
+   "expect": "The 194986 mugs at 44047 mugs a week last 4 full weeks with 18798 mugs left for the next week."
+  },
+  {
+   "fn": "weeks",
+   "args": [
+    "172697",
+    "32215"
+   ],
+   "expect": "The 172697 mugs at 32215 mugs a week last 5 full weeks with 11622 mugs left for the next week."
+  },
+  {
+   "fn": "weeks",
+   "args": [
+    "536807",
+    "15790"
+   ],
+   "expect": "The 536807 mugs at 15790 mugs a week last 33 full weeks with 15737 mugs left for the next week."
+  },
+  {
+   "fn": "weeks",
+   "args": [
+    "101537",
+    "89252"
+   ],
+   "expect": "The 101537 mugs at 89252 mugs a week last 1 full week with 12285 mugs left for the next week."
+  },
+  {
+   "fn": "weeks",
+   "args": [
+    "63641",
+    "72063"
+   ],
+   "expect": "The 63641 mugs at 72063 mugs a week last 0 full weeks with 63641 mugs left for the next week."
+  },
+  {
+   "fn": "weeks",
+   "args": [
+    "289591",
+    "7662"
+   ],
+   "expect": "The 289591 mugs at 7662 mugs a week last 37 full weeks with 6097 mugs left for the next week."
+  },
+  {
+   "fn": "weeks",
+   "args": [
+    "934194",
+    "77772"
+   ],
+   "expect": "The 934194 mugs at 77772 mugs a week last 12 full weeks with 930 mugs left for the next week."
+  },
+  {
+   "fn": "weeks",
+   "args": [
+    "78352",
+    "97558"
+   ],
+   "expect": "The 78352 mugs at 97558 mugs a week last 0 full weeks with 78352 mugs left for the next week."
+  },
+  {
+   "fn": "weeks",
+   "args": [
+    "684507",
+    "98952"
+   ],
+   "expect": "The 684507 mugs at 98952 mugs a week last 6 full weeks with 90795 mugs left for the next week."
+  },
+  {
+   "fn": "weeks",
+   "args": [
+    "298453",
+    "94854"
+   ],
+   "expect": "The 298453 mugs at 94854 mugs a week last 3 full weeks with 13891 mugs left for the next week."
+  },
+  {
+   "fn": "weeks",
+   "args": [
+    "382010",
+    "8582"
+   ],
+   "expect": "The 382010 mugs at 8582 mugs a week last 44 full weeks with 4402 mugs left for the next week."
+  },
+  {
+   "fn": "weeks",
+   "args": [
+    "428598",
+    "37847"
+   ],
+   "expect": "The 428598 mugs at 37847 mugs a week last 11 full weeks with 12281 mugs left for the next week."
+  },
+  {
+   "fn": "weeks",
+   "args": [
+    "671013",
+    "48702"
+   ],
+   "expect": "The 671013 mugs at 48702 mugs a week last 13 full weeks with 37887 mugs left for the next week."
+  },
+  {
+   "fn": "weeks",
+   "args": [
+    "806251",
+    "94593"
+   ],
+   "expect": "The 806251 mugs at 94593 mugs a week last 8 full weeks with 49507 mugs left for the next week."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "55466",
+    "579.91",
+    "363599"
+   ],
+   "expect": "The 55466 boxes at $579.91 a box come to $32165288.06, $88.46 a mug."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "51581",
+    "516.47",
+    "906423"
+   ],
+   "expect": "The 51581 boxes at $516.47 a box come to $26640039.07, $29.39 a mug."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "28880",
+    "154.69",
+    "264484"
+   ],
+   "expect": "The 28880 boxes at $154.69 a box come to $4467447.20, $16.89 a mug."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "76614",
+    "945.4",
+    "454189"
+   ],
+   "expect": "The 76614 boxes at $945.40 a box come to $72430875.60, $159.47 a mug."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "59920",
+    "959.23",
+    "718335"
+   ],
+   "expect": "The 59920 boxes at $959.23 a box come to $57477061.60, $80.01 a mug."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "37437",
+    "786.02",
+    "599082"
+   ],
+   "expect": "The 37437 boxes at $786.02 a box come to $29426230.74, $49.12 a mug."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "90125",
+    "899.79",
+    "886198"
+   ],
+   "expect": "The 90125 boxes at $899.79 a box come to $81093573.75, $91.51 a mug."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "39008",
+    "250.94",
+    "784917"
+   ],
+   "expect": "The 39008 boxes at $250.94 a box come to $9788667.52, $12.47 a mug."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "60984",
+    "696.85",
+    "759367"
+   ],
+   "expect": "The 60984 boxes at $696.85 a box come to $42496700.40, $55.96 a mug."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "37123",
+    "69.04",
+    "208654"
+   ],
+   "expect": "The 37123 boxes at $69.04 a box come to $2562971.92, $12.28 a mug."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "31568",
+    "828.85",
+    "460705"
+   ],
+   "expect": "The 31568 boxes at $828.85 a box come to $26165136.80, $56.79 a mug."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "46177",
+    "650.44",
+    "199722"
+   ],
+   "expect": "The 46177 boxes at $650.44 a box come to $30035367.88, $150.39 a mug."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "90827",
+    "100.83",
+    "719709"
+   ],
+   "expect": "The 90827 boxes at $100.83 a box come to $9158086.41, $12.72 a mug."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "14341",
+    "762.14",
+    "710464"
+   ],
+   "expect": "The 14341 boxes at $762.14 a box come to $10929849.74, $15.38 a mug."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "24408",
+    "832.31",
+    "245896"
+   ],
+   "expect": "The 24408 boxes at $832.31 a box come to $20315022.48, $82.62 a mug."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "46763",
+    "810.08",
+    "763016"
+   ],
+   "expect": "The 46763 boxes at $810.08 a box come to $37881771.04, $49.65 a mug."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "61032",
+    "310.38",
+    "138460"
+   ],
+   "expect": "The 61032 boxes at $310.38 a box come to $18943112.16, $136.81 a mug."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "92925",
+    "526.99",
+    "508708"
+   ],
+   "expect": "The 92925 boxes at $526.99 a box come to $48970545.75, $96.26 a mug."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "70766",
+    "653.15",
+    "629812"
+   ],
+   "expect": "The 70766 boxes at $653.15 a box come to $46220812.90, $73.39 a mug."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "96283",
+    "97.26",
+    "404890"
+   ],
+   "expect": "The 96283 boxes at $97.26 a box come to $9364484.58, $23.13 a mug."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "56934",
+    "362.65",
+    "159719"
+   ],
+   "expect": "The 56934 boxes at $362.65 a box come to $20647115.10, $129.27 a mug."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "12101",
+    "263.25",
+    "589015"
+   ],
+   "expect": "The 12101 boxes at $263.25 a box come to $3185588.25, $5.41 a mug."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "26384",
+    "852.98",
+    "551405"
+   ],
+   "expect": "The 26384 boxes at $852.98 a box come to $22505024.32, $40.81 a mug."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "77732",
+    "392.08",
+    "904367"
+   ],
+   "expect": "The 77732 boxes at $392.08 a box come to $30477162.56, $33.70 a mug."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "64645",
+    "745.43",
+    "201787"
+   ],
+   "expect": "The 64645 boxes at $745.43 a box come to $48188322.35, $238.81 a mug."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "476510",
+    "37"
+   ],
+   "expect": "The 476510 mugs at 37 mugs a minute take 12879 minutes, 214 hours 39 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "194920",
+    "80"
+   ],
+   "expect": "The 194920 mugs at 80 mugs a minute take 2437 minutes, 40 hours 37 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "202610",
+    "56"
+   ],
+   "expect": "The 202610 mugs at 56 mugs a minute take 3619 minutes, 60 hours 19 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "392897",
+    "100"
+   ],
+   "expect": "The 392897 mugs at 100 mugs a minute take 3929 minutes, 65 hours 29 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "489290",
+    "39"
+   ],
+   "expect": "The 489290 mugs at 39 mugs a minute take 12546 minutes, 209 hours 6 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "37131",
+    "46"
+   ],
+   "expect": "The 37131 mugs at 46 mugs a minute take 808 minutes, 13 hours 28 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "647424",
+    "13"
+   ],
+   "expect": "The 647424 mugs at 13 mugs a minute take 49802 minutes, 830 hours 2 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "933638",
+    "97"
+   ],
+   "expect": "The 933638 mugs at 97 mugs a minute take 9626 minutes, 160 hours 26 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "475377",
+    "7"
+   ],
+   "expect": "The 475377 mugs at 7 mugs a minute take 67911 minutes, 1131 hours 51 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "682151",
+    "41"
+   ],
+   "expect": "The 682151 mugs at 41 mugs a minute take 16638 minutes, 277 hours 18 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "809509",
+    "96"
+   ],
+   "expect": "The 809509 mugs at 96 mugs a minute take 8433 minutes, 140 hours 33 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "134199",
+    "53"
+   ],
+   "expect": "The 134199 mugs at 53 mugs a minute take 2533 minutes, 42 hours 13 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "159675",
+    "40"
+   ],
+   "expect": "The 159675 mugs at 40 mugs a minute take 3992 minutes, 66 hours 32 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "951620",
+    "18"
+   ],
+   "expect": "The 951620 mugs at 18 mugs a minute take 52868 minutes, 881 hours 8 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "432784",
+    "90"
+   ],
+   "expect": "The 432784 mugs at 90 mugs a minute take 4809 minutes, 80 hours 9 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "161225",
+    "27"
+   ],
+   "expect": "The 161225 mugs at 27 mugs a minute take 5972 minutes, 99 hours 32 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "733136",
+    "73"
+   ],
+   "expect": "The 733136 mugs at 73 mugs a minute take 10043 minutes, 167 hours 23 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "425455",
+    "80"
+   ],
+   "expect": "The 425455 mugs at 80 mugs a minute take 5319 minutes, 88 hours 39 minutes."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "966635",
+    "72"
+   ],
+   "expect": "The 966635 mugs at 72 mugs a minute take 13426 minutes, 223 hours 46 minutes."
+  }
+ ],
+ "errors": [
+  [
+   "boxes",
+   [
+    "0",
+    "24"
+   ]
+  ],
+  [
+   "boxes",
+   [
+    "1000001",
+    "24"
+   ]
+  ],
+  [
+   "boxes",
+   [
+    "2.5",
+    "24"
+   ]
+  ],
+  [
+   "boxes",
+   [
+    "350",
+    "0"
+   ]
+  ],
+  [
+   "boxes",
+   [
+    "350",
+    "1001"
+   ]
+  ],
+  [
+   "weeks",
+   [
+    "0",
+    "40"
+   ]
+  ],
+  [
+   "weeks",
+   [
+    "350",
+    "0"
+   ]
+  ],
+  [
+   "weeks",
+   [
+    "350",
+    "100001"
+   ]
+  ],
+  [
+   "weeks",
+   [
+    "350",
+    "1.5"
+   ]
+  ],
+  [
+   "weeks",
+   [
+    "1000001",
+    "40"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "0",
+    "38.50",
+    "350"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "100001",
+    "38.50",
+    "350"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "15",
+    "0",
+    "350"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "15",
+    "38.505",
+    "350"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "15",
+    "38.50",
+    "0"
+   ]
+  ],
+  [
+   "time",
+   [
+    "0",
+    "6"
+   ]
+  ],
+  [
+   "time",
+   [
+    "350",
+    "0"
+   ]
+  ],
+  [
+   "time",
+   [
+    "350",
+    "101"
+   ]
+  ],
+  [
+   "time",
+   [
+    "350",
+    "6.5"
+   ]
+  ],
+  [
+   "time",
+   [
+    "1000001",
+    "6"
+   ]
+  ]
+ ]
+}
