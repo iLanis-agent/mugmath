@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mug Math - app</title>
+<style>
+  :root { --accent:#2b3a67; --ink:#141a2e; --paper:#f1f3f9; --soft:#e0e4f0; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2rem 1.2rem; }
+  h1 { font-size:1.8rem; color:var(--accent); }
+  .boundary { margin:1rem 0 1.4rem; }
+  .panel { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1rem 1.1rem; margin-bottom:1.1rem; }
+  h2 { font-size:1.1rem; margin-bottom:.6rem; }
+  p.note { font-size:.9rem; margin-bottom:.4rem; }
+  label { display:block; font-size:.9rem; margin:.45rem 0 .1rem; }
+  input { width:100%; padding:.45rem .55rem; font-size:1rem; border:1px solid #aab3d1; border-radius:6px; background:#fff; color:var(--ink); }
+  .row2 { display:grid; grid-template-columns:1fr 1fr; gap:.6rem; }
+  .out { margin-top:.7rem; font-size:.98rem; background:#fff; border:1px dashed #aab3d1; border-radius:6px; padding:.6rem .7rem; min-height:2.4rem; overflow-wrap:anywhere; }
+  .out.err { border-color:#b03030; color:#8a1f1f; }
+  footer { margin-top:1.8rem; font-size:.85rem; color:#6f7aa0; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Mug Math</h1>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    This page counts an event mug stock with multiplication, division and rounding-up: the boxes the mugs take, the weeks the stock lasts, the cost a mug, and the minutes the printing takes. It uses no named constants. The mugs, the box size, the weekly use, the box price and the printing speed are yours to decide and read off your own orders, shelves and invoices. It applies the counting as written, so it has not seen your mugs, your boxes or your press and does not know whether the mugs will really arrive unchipped, the press will jam or the price will hold, and it gives no verdict that a box is worth its price or a mug is right for your event. Every number here is your own entry.
+  </div>
+
+  <div class="panel">
+    <h2>The boxes truth</h2>
+    <p class="note">Boxes: the mugs divided by the mugs a box, rounded up, with what the last box holds.</p>
+    <div class="row2"><div><label for="b-n">Mugs</label><input id="b-n" type="text" value="350"></div><div><label for="b-b">Mugs a box</label><input id="b-b" type="text" value="24"></div></div>
+    <div class="out" id="b-out"></div>
+  </div>
+  <div class="panel">
+    <h2>The weeks truth</h2>
+    <p class="note">Weeks: the mugs divided by the mugs used a week, with the mugs left for the next week.</p>
+    <div class="row2"><div><label for="w-n">Mugs</label><input id="w-n" type="text" value="350"></div><div><label for="w-w">Mugs a week</label><input id="w-w" type="text" value="40"></div></div>
+    <div class="out" id="w-out"></div>
+  </div>
+  <div class="panel">
+    <h2>The cost truth</h2>
+    <p class="note">Cost: the boxes times the box price, to the cent, and spread over the mugs.</p>
+    <div class="row2"><div><label for="k-b">Boxes</label><input id="k-b" type="text" value="15"></div><div><label for="k-p">Box price ($)</label><input id="k-p" type="text" value="38.50"></div></div>
+    <div class="row2"><div><label for="k-n">Mugs</label><input id="k-n" type="text" value="350"></div></div>
+    <div class="out" id="k-out"></div>
+  </div>
+  <div class="panel">
+    <h2>The time truth</h2>
+    <p class="note">Time: the mugs divided by the mugs printed a minute, rounded up, in minutes and in hours and minutes.</p>
+    <div class="row2"><div><label for="t-n">Mugs</label><input id="t-n" type="text" value="350"></div><div><label for="t-m">Mugs a minute</label><input id="t-m" type="text" value="6"></div></div>
+    <div class="out" id="t-out"></div>
+  </div>
+
+  <footer>Mug Math is exact arithmetic over the numbers you enter. <a href="index.html">Why it exists</a>.</footer>
+</main>
+<script src="engine.js"></script>
+<script>
+  function show(id, fn) {
+    const out = document.getElementById(id);
+    try { out.textContent = fn(); out.classList.remove("err"); }
+    catch (e) { out.textContent = e.message; out.classList.add("err"); }
+  }
+  function recalc() {
+    const v = (id) => document.getElementById(id).value;
+    show("b-out", () => boxesTruth(v("b-n"), v("b-b")));
+    show("w-out", () => weeksTruth(v("w-n"), v("w-w")));
+    show("k-out", () => costTruth(v("k-b"), v("k-p"), v("k-n")));
+    show("t-out", () => timeTruth(v("t-n"), v("t-m")));
+  }
+  document.querySelectorAll("input").forEach((el) => {
+    el.addEventListener("input", recalc);
+    el.addEventListener("change", recalc);
+  });
+  recalc();
+</script>
+</body>
+</html>
